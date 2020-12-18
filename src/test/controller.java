@@ -30,7 +30,7 @@ public class controller extends HttpServlet {
 		String dest = "";
 		
 		if(action.equals("list")){
-			dest = "/list.jsp";
+			dest = "/list1218.jsp";
 		} else {
 			dest = "/test.jsp";
 		}

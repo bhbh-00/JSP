@@ -40,18 +40,25 @@
 	</c:forEach>
 
 	<h1>4. 문제 - 응용 구구단</h1>
-	
-	<c:forEach var="dan" begin="2" end="19" step="1">
-	<h4>${dan}단</h4>
+	<c:set var="n" value="4" />
+	<c:set var="m" value="19" />
+	<c:set var="limit" value="11" />
+	<c:forEach var="dan" begin="${n}" end="${m}" step="1">
+		<h4>${dan}단</h4>
 		<c:forEach var="gugu" begin="2" end="11" step="2">
-		<p>${dan} x ${gugu} = ${dan * gugu}</p>
+			<p>${dan}x ${gugu} = ${dan * gugu}</p>
 		</c:forEach>
 	</c:forEach>
-	
+
 	<h1>5. 문제 - 삼각형 그리기1</h1>
-	
-	<c:set var="y" value="3"/>
-	<c:forEach var="" begin="" end="" step=""></c:forEach>
+
+	<c:set var="y" value="3" />
+	<c:forEach var="i" begin="1" end="${y}">
+		<c:forEach var="j" begin="1" end="${i}">
+				*
+	</c:forEach>
+	<br>
+	</c:forEach>
 
 </body>
 </html>
