@@ -12,7 +12,7 @@
 <body>
 
 	<%
-		ArrayList<Article> articles = (ArrayList<Article>)request.getAttribute("mydate");
+		ArrayList<Article> articles = (ArrayList<Article>) request.getAttribute("mydate");
 	%>
 
 	<h1>게시판 목록</h1>
@@ -27,6 +27,12 @@
 		</tr>
 		<%
 			for (int i = 0; i < articles.size(); i++) {
+
+				/*for(String str : articles) { 
+					out.println(str)
+					}*/
+				
+				// 위와 같은 표현 JSTL <c:forEach var="str" items="${strList}"> ${str}</c:forEach>
 		%>
 		<tr>
 
